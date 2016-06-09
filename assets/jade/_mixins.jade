@@ -1,0 +1,28 @@
+mixin tituloseccion(titulo)
+	.row.text-center
+		h2.animated.fadeInUp.delay1= titulo
+
+mixin project-page(src, imgsrc)
+	.col-xs-8.col-sm-5
+		.projectmobile.text-center
+			a(href=src, target="blank")
+				img(src=imgsrc, alt="view-project", class="img-proj img-responsive")
+
+mixin project-page-iframe(src, imgsrc)
+	.col-xs-4
+		.projects.hidden-sm
+			.iphone
+				.frame-iphone
+					iframe(src=src, frameborder="0", class="iphonepage")
+					a(href=src, class="ibutton")
+		.projectmobile.visible-sm
+			a(href=src, target="blank")
+				img(src=imgsrc, alt="view-project", class="img-proj img-responsive")
+mixin skills(tag, skill)
+	p.skill-style(class=tag)= skill
+mixin f-e(src, progress)
+	.col-xs-6.col-sm-4.col-md-3
+		img(src=src).logo-skill.img-responsive
+		.progress
+			div(class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: "+progress)
+				span.sr-only progress

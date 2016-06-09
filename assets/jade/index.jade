@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0' )
+		title Gabriela Segura| Portafolio
+		link(href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,300,700' rel='stylesheet' type='text/css')
+		link(href="assets/font-awesome/css/font-awesome.min.css", rel="stylesheet")
+		link(href="assets/css/bootstrap.min.css", type="text/css" rel="stylesheet")
+		link(href="assets/css/animate.min.css", rel="stylesheet")
+		link(href="assets/css/jquery.fullpage.min.css", rel="stylesheet")
+		link(href="assets/css/main.css", rel="stylesheet")
+	body
+		include ./_variables
+		include ./_mixins
+		div#fullpage
+			.section.home-style
+				.frame-home.row
+					p.hi.fadeInUp.animated ¡Hola!
+					h1.fadeInUp.animated Mi nombre es Gabriela Segura, soy desarrolladora web front-end y comunicadora social
+				.frame-arrow.text-center
+					a(href="index.html#portfolio").arrow-home
+						i(id="arrow" class="fa fa-caret-down infinite animated pulse")
+				.frame-rs
+					a(href="https://www.linkedin.com/in/gabrielaseguras").fadeInUp.animated.first
+						i(class="fa fa-linkedin fa-2x" aria-hidden="true")
+					a(href="https://github.com/Gabx04").fadeInUp.animated.second
+						i(class="fa fa-github fa-2x" aria-hidden="true")
+
+			.section.second.portfolio-style
+				div(data-anchor="project1").slide
+					+tituloseccion('PORTAFOLIO')
+					.row
+						+project-page("https://gabx04.github.io/Examen-Individual-Unidad-2", "img/WStudio.png")
+						.col-xs-4.col-sm-1
+							.info-project.text-center
+								p.title W Studio
+								.tags
+									+skills("ja", "jade")
+									+skills("ss", "sass")
+									+skills("html", "html")
+									+skills("css", "css")
+									+skills("rp", "responsive")
+
+						+project-page("https://gabx04.github.io/portfolio", "img/portfolio.png")
+						.col-xs-4.col-sm-1
+							.info-project.text-center
+								p.title Portfolio
+								.tags
+									+skills("html", "html")
+									+skills("css", "css")
+									+skills("rp", "responsive")
+								
+				div(data-anchor="project2").slide
+					.row
+						+project-page("https://gabx04.github.io/PrimesThemes/", "img/Primes.png")
+						.col-xs-4.col-sm-1
+							.info-project.text-center
+								p.title Primes
+								.tags
+									+skills("html", "html")
+									+skills("css", "css")
+									+skills("rp", "responsive")
+						+project-page("https://gabx04.github.io/PaletadeColores/", "img/KaneTheme.png")
+						.col-xs-4.col-sm-1
+							.info-project.text-center
+								p.title Kane Theme
+								.tags
+									+skills("ss", "sass")
+									+skills("html", "html")
+									+skills("css", "css")
+									+skills("rp", "responsive")
+				div(data-anchor="project3").slide
+					.row
+						+project-page("https://gabx04.github.io/userTesting/", "img/UserTesting.png")
+						.col-xs-4.col-sm-1
+							.info-project.text-center
+								p.title User Testing
+								.tags
+									+skills("html", "html")
+									+skills("css", "css")
+									+skills("rp", "responsive")
+						+project-page("https://gabx04.github.io/AgencyTheme/", "img/AgencyTheme.png")
+						.col-xs-4.col-sm-1
+							.info-project.text-center
+								p.title Agency Theme
+								.tags
+									+skills("ja", "jade")
+									+skills("ss", "sass")
+									+skills("html", "html")
+									+skills("css", "css")
+									+skills("rp", "responsive")
+				div(data-anchor="project4").slide
+					.row
+						+project-page("https://gabx04.github.io/Examen-Individual-Unidad-3", "img/whatsapp.png")
+						.col-xs-4.col-sm-1
+							.info-project.text-center
+								p.title Whatsapp
+								.tags
+									+skills("js", "javascript")
+									+skills("jq", "jquery")
+									+skills("html", "html")
+									+skills("css", "css")
+									+skills("rp", "responsive")
+						+project-page("https://gabx04.github.io/TODOAPP/", "img/TODOapp.png")
+						.col-xs-4.col-sm-1
+							.info-project.text-center
+								p.title TODO App
+								.tags
+									+skills("js", "javascript")
+									+skills("html", "html")
+									+skills("css", "css")
+									+skills("rp", "responsive")
+			.section.thrid.skills-style
+				+tituloseccion('HABILIDADES')
+				.row
+					+f-e("img/skills/html-5-badge.svg", "70%")
+					+f-e("img/skills/css-3.svg", "75%")
+					+f-e("img/skills/web-pages.svg", "70%")
+					+f-e("img/skills/Sass-Logo-Seal-Black.png", "60%")
+					+f-e("img/skills/github-logo -skills-b.svg", "50%")
+					+f-e("img/skills/js-document.svg", "20%")
+					+f-e("img/skills/jquery-sketch-symbol.svg", "20%")
+					+f-e("img/skills/wordpress-social-badge.svg", "20%")
+
+
+
+			.section.fourth.about-style
+				.row
+					.col-xs-12.col-sm-4
+						img(src="img/bg-aboutrec.png" class="bg-about")
+					.col-xs-12.col-sm-8.pr
+						h2 SOBRE MI
+
+						p.aboutme ¡Hola! Mi nombre es Gabriela Segura. Soy desarrolladora web front-end, miembro de la cuarta promoción de Laboratoria, y comunicadora social con especialización en Producción Audiovisual (UNMSM). Disfruto al construir sitios web que sean amigables con el usuario, accesibles desde cualquier dispositivo y de acuerdo a las mejores prácticas.
+
+						p.aboutme En mis ratos libres me gusta aprender nuevos idiomas (y ¡nuevos lenguajes de programación!) y realizar proyectos audiovisuales con amigos.
+
+			.section.fifth.contact-style
+				.row
+					.col-xs-12
+						h2 CONTÁCTAME
+						p.contact La forma más rápida de contactarme es por email: 
+						<a href="mailto:gabriela.segurasaune@gmail.com">gabriela.segurasaune@gmail.com</a>
+						p.contact También puedes encontrarme en mis redes sociales.
+						.contact-icons
+							a(href="https://www.linkedin.com/in/gabrielaseguras").rs.fadeInUp.animated.first
+								i(class="fa fa-linkedin fa-2x" aria-hidden="true")
+							a(href="https://github.com/Gabx04").rs.fadeInUp.animated.second
+								i(class="fa fa-github fa-2x" aria-hidden="true")
+							a(href="https://github.com/Gabx04").rs.fadeInUp.animated.second
+								i(class="fa fa-github fa-2x" aria-hidden="true")
+
+				
+		script(src="https://code.jquery.com/jquery-1.12.4.min.js")
+		script(src="assets/js/jquery.viewportchecker.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/vendors/jquery.easings.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+		script(src="assets/js/jquery.fullpage.js")
+		script(src="assets/js/scrollAnimated.js" type="text/javascript")
+		script(src="assets/js/main.js" type="text/javascript")

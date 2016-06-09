@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Mohave';
+  src: url("../fonts/Mohave.otf") format("opentype"); }
+/*
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  color: #0d0d0d;
+  text-align: right;
+  max-width: 580px;
+  float: right;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  font-weight: bold; }
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  color: #0d0d0d;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: initial !important; }
+
+.pr {
+  padding-right: 5%; }
+
+.pl {
+  padding-left: 5%; }
+
+.iphone {
+  max-width: 80%;
+  background-color: #000;
+  border-radius: 36px;
+  display: block;
+  padding: 35px 18px 18px;
+  width: 250px;
+  margin: 0 auto;
+  transition: all .5s; }
+  .iphone .ibutton {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #000;
+    margin: 5px auto 0;
+    display: block;
+    border: solid 1px #333;
+    transition: all .4s; }
+  .iphone .ibutton:hover {
+    background-color: #121212; }
+  .iphone iframe.iphonepage {
+    border: none;
+    max-width: 100%;
+    height: 330px;
+    background-color: #33cdac;
+    max-height: 100%; }
+
+.home-style {
+  /*background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../../img/bg-home.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+  */
+  background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url(../../img/bg-home4.jpg) no-repeat;
+  background: -o-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url(../../img/bg-home4.jpg) no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url(../../img/bg-home4.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-right: 5%;
+  padding-left: 5%; }
+  .home-style .frame-home {
+    width: 100%;
+    margin: 0% auto 0; }
+  .home-style .hi {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: #33cdac;
+    text-align: right; }
+
+.frame-arrow {
+  margin-top: 8%; }
+
+.arrow-home {
+  margin: 1% auto 0;
+  display: inline-block; }
+  .arrow-home #arrow {
+    color: #33cdac;
+    font-size: 90px; }
+
+.frame-rs a {
+  display: inline-block;
+  margin: 10px; }
+  .frame-rs a.first {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s; }
+  .frame-rs a.second {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s; }
+.frame-rs i {
+  color: #33cdac;
+  font-size: 42px; }
+
+.portfolio-style {
+  background-color: #E8E8E8;
+  padding-right: 5%;
+  padding-left: 5%; }
+  .portfolio-style h2 {
+    margin: 10px auto 0;
+    text-align: center; }
+  .portfolio-style .projectmobile {
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .portfolio-style .info-project {
+    margin-top: 40px; }
+  @media (max-width: 767px) {
+    .portfolio-style h2 {
+      margin-bottom: 25px; }
+    .portfolio-style img {
+      max-width: 250px;
+      max-height: auto; } }
+  .portfolio-style .delay1 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s; }
+  .portfolio-style .title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #33cdac; }
+  .portfolio-style .tags {
+    padding-top: 20px; }
+  .portfolio-style .skill-style {
+    padding: 2px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 700;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    max-width: 100px; }
+  .portfolio-style .ss {
+    background-color: #CF649A; }
+  .portfolio-style .ja {
+    background-color: #569A83; }
+  .portfolio-style .html {
+    background-color: #E54D26; }
+  .portfolio-style .css {
+    background-color: #006EB9; }
+  .portfolio-style .rp {
+    background-color: #614789; }
+  .portfolio-style .js {
+    background-color: #F0DB4F; }
+  .portfolio-style .jq {
+    background-color: #78CFF5; }
+
+.skills-style {
+  padding-right: 5%;
+  padding-left: 5%; }
+  .skills-style .logo-skill {
+    width: 70px;
+    height: auto;
+    margin-bottom: 15px; }
+  .skills-style .progress-bar {
+    background-color: #33cdac; }
+
+.about-style .bg-about {
+  width: auto;
+  height: 100%; }
+.about-style .aboutme {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: justify; }
+
+.contact-style {
+  text-align: center;
+  font-size: 24px; }
+  .contact-style .contact {
+    font-family: "Ubuntu", sans-serif;
+    margin: 30px 0; }
+  .contact-style a {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    color: #33cdac; }
+  .contact-style .rs {
+    margin: 15px; }
+
+.hiddenThing {
+  opacity: 0; }
+
+.visibleThing {
+  opacity: 1; }
+
+/*# sourceMappingURL=main.css.map */
