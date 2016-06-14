@@ -234,6 +234,10 @@ h2 {
     font-size: 23px;
     margin-top: 20px;
     text-align: justify; }
+    @media only screen and (min-device-width: 768px) {
+      .about-style .aboutme {
+        text-align: center;
+        font-size: 18px; } }
   .about-style .strong {
     font-weight: bold;
     color: black; }
