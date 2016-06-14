@@ -15,11 +15,30 @@ h1 {
   font-size: 40px;
   color: #0d0d0d;
   text-align: right;
-  max-width: 580px;
+  max-width: 50%;
   float: right;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
   font-weight: bold; }
+  @media only screen and (max-width: 992px) {
+    h1 {
+      max-width: 45%; } }
+  @media only screen and (max-width: 800px) {
+    h1 {
+      max-width: 50%;
+      color: #fff; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    h1 {
+      font-size: 50px; } }
+  @media only screen and (max-width: 480px) {
+    h1 {
+      max-width: 100%;
+      font-size: 30px;
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+      float: none;
+      margin: 0 auto; } }
 
 h2 {
   font-family: "Ubuntu", sans-serif;
@@ -28,12 +47,21 @@ h2 {
   text-align: center;
   font-weight: bold;
   vertical-align: initial !important; }
+  @media only screen and (max-width: 480px) {
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      color: #fff;
+      text-align: center; } }
 
 .pr {
   padding-right: 5%; }
 
 .pl {
   padding-left: 5%; }
+
+#fp-nav ul li a span {
+  background-color: #33cdac; }
 
 .iphone {
   max-width: 80%;
@@ -77,9 +105,23 @@ h2 {
   background-size: cover;
   padding-right: 5%;
   padding-left: 5%; }
+  @media only screen and (max-width: 992px) {
+    .home-style {
+      background-position: 30% top; } }
+  @media only screen and (max-width: 800px) {
+    .home-style {
+      background-position: 35% top; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .home-style {
+      background-position: 35% top; } }
+  @media only screen and (max-width: 480px) {
+    .home-style .space {
+      height: 240px; } }
   .home-style .frame-home {
     width: 100%;
     margin: 0% auto 0; }
+  .home-style .space {
+    height: 5%; }
   .home-style .hi {
     font-family: "Oswald", sans-serif;
     font-weight: 700;
@@ -90,6 +132,9 @@ h2 {
 
 .frame-arrow {
   margin-top: 8%; }
+  @media only screen and (max-width: 992px) {
+    .frame-arrow {
+      margin-top: 4%; } }
 
 .arrow-home {
   margin: 1% auto 0;
@@ -175,15 +220,23 @@ h2 {
   .skills-style .progress-bar {
     background-color: #33cdac; }
 
-.about-style .bg-about {
-  width: auto;
-  height: 100%; }
-.about-style .aboutme {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  margin-top: 20px;
-  text-align: justify; }
+.about-style {
+  background: url(../../img/bg-am.jpg) repeat;
+  padding-right: 5%;
+  padding-left: 5%; }
+  .about-style .img-about {
+    width: auto;
+    height: 100%;
+    border-radius: 50%; }
+  .about-style .aboutme {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    margin-top: 20px;
+    text-align: justify; }
+  .about-style .strong {
+    font-weight: bold;
+    color: black; }
 
 .contact-style {
   text-align: center;

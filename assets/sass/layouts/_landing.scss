@@ -47,13 +47,44 @@
 	background-size: cover;
 	padding-right: 5%;
 	padding-left: 5%;
-	@media (max-width: 480px) {
-		//background: url(../../img/bg-home7.jpg) no-repeat; 
+	@media only screen and (max-width : 992px) {
+		background-position: 30% top;
+		//padding-top: 15%;
+	}
+	 @media only screen and (max-width : 800px) {
+		background-position: 35% top;
+		//padding: 35% 5% 0 %5; 
+	}
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
+	and (orientation : landscape)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		background-position: 35% top;
+	}
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
+	and (orientation : portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		
+	}
+	@media only screen and (max-width : 480px) {
+		.space {
+			height: 240px;
+		}
+		//padding-top: calc(100% - 330px);
+		// background-color: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+		// //background: -o-linear-gradient(left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../../img/bg-home4.jpg) no-repeat;
+		// //background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../../img/bg-home4.jpg) no-repeat;
 	}
 
 	.frame-home {
 		width: 100%;
 		margin: 0% auto 0;
+	}
+	.space {
+		height: 5%;
 	}
 	.hi {
 		font-family: $oswald;
@@ -62,10 +93,16 @@
 		letter-spacing: 5px;
 		color: #33cdac;
 		text-align: right;
+		@media only screen and (max-width : 992px) {
+			//margin-top: 20%;
+		}
 	}
 }
 .frame-arrow {
 	margin-top: 8%;
+	@media only screen and (max-width : 992px) {
+		margin-top: 4%;
+	}
 }
 .arrow-home {
 		margin: 1% auto 0;
@@ -189,16 +226,25 @@
 	}
 }
 .about-style {
-	.bg-about {
+	background: url(../../img/bg-am.jpg) repeat;
+	padding-right: 5%;
+	padding-left: 5%;
+
+	.img-about {
 		width: auto;
 		height: 100%;
+		border-radius: 50%;
 	}
 	.aboutme {
 		font-family: $ubuntu;
-		font-weight: 400;
-		font-size: 18px;
+		font-weight: 500;
+		font-size: 23px;
 		margin-top: 20px;
 		text-align: justify;
+	}
+	.strong {
+		font-weight: bold;
+		color: black;
 	}
 }
 .contact-style {

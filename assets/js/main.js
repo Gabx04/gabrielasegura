@@ -1,6 +1,11 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors:['home', 'portfolio', 'skills', 'about', 'contact']
+        anchors:['inicio', 'portafolio', 'habilidades', 'sobre-mi', 'contacto'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['inicio', 'portafolio', 'habilidades', 'sobre mi', 'contacto'],
+        //showActiveTooltip: true,
+        keyboardScrolling: true
     });
 });
 /*

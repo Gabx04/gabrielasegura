@@ -17,10 +17,11 @@ html(lang="en")
 		div#fullpage
 			.section.home-style
 				.frame-home.row
+					.space
 					p.hi.fadeInUp.animated ¡Hola!
 					h1.fadeInUp.animated Mi nombre es Gabriela Segura, soy desarrolladora web front-end y comunicadora social
 				.frame-arrow.text-center
-					a(href="index.html#portfolio").arrow-home
+					a(href="index.html#portafolio").arrow-home
 						i(id="arrow" class="fa fa-caret-down infinite animated pulse")
 				.frame-rs
 					a(href="https://www.linkedin.com/in/gabrielaseguras").fadeInUp.animated.first
@@ -128,12 +129,23 @@ html(lang="en")
 
 			.section.fourth.about-style
 				.row
-					.col-xs-12.col-sm-4
-						img(src="img/bg-aboutrec.png" class="bg-about")
-					.col-xs-12.col-sm-8.pr
+					.hidden-xs.hidden-sm.col-md-4
+						img(src="img/bg-aboutrec.png" class="img-about")
+					.col-xs-12.col-md-offset-1.col-md-7.pl.pr
 						h2 SOBRE MI
 
-						p.aboutme ¡Hola! Mi nombre es Gabriela Segura. Soy desarrolladora web front-end, miembro de la cuarta promoción de Laboratoria, y comunicadora social con especialización en Producción Audiovisual (UNMSM). Disfruto al construir sitios web que sean amigables con el usuario, accesibles desde cualquier dispositivo y de acuerdo a las mejores prácticas.
+						p.aboutme
+							|¡Hola! Mi nombre es Gabriela Segura. Soy 
+							span.strong desarrolladora web front-end
+							|, miembro de la cuarta promoción de 
+							span.strong Laboratoria
+							|, y comunicadora social con |especialización en Producción |Audiovisual (UNMSM). Disfruto al |construir sitios web que sean 
+							span.strong intuitivos
+							|, 
+							span.strong amigables
+							| con el usuario y 
+							span.strong accesibles
+							| desde cualquier dispositivo.
 
 						p.aboutme En mis ratos libres me gusta aprender nuevos idiomas (y ¡nuevos lenguajes de programación!) y realizar proyectos audiovisuales con amigos.
 
@@ -142,15 +154,14 @@ html(lang="en")
 					.col-xs-12
 						h2 CONTÁCTAME
 						p.contact La forma más rápida de contactarme es por email: 
-						<a href="mailto:gabriela.segurasaune@gmail.com">gabriela.segurasaune@gmail.com</a>
+						<a href="mailto:gabriela.segura04@gmail.com">gabriela.segura04@gmail.com</a>
 						p.contact También puedes encontrarme en mis redes sociales.
 						.contact-icons
 							a(href="https://www.linkedin.com/in/gabrielaseguras").rs.fadeInUp.animated.first
 								i(class="fa fa-linkedin fa-2x" aria-hidden="true")
 							a(href="https://github.com/Gabx04").rs.fadeInUp.animated.second
 								i(class="fa fa-github fa-2x" aria-hidden="true")
-							a(href="https://github.com/Gabx04").rs.fadeInUp.animated.second
-								i(class="fa fa-github fa-2x" aria-hidden="true")
+							a(href="https://github.com/Gabx04").rs
 
 				
 		script(src="https://code.jquery.com/jquery-1.12.4.min.js")
