@@ -33,11 +33,6 @@
 //HOME
 
 .home-style{
-	/*background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../../img/bg-home.jpg);
-	background-size: contain;
-	background-repeat: repeat;
-	background-position: center center;
-	*/
 	background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url(../../img/bg-home4.jpg) no-repeat;
 	background: -o-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url(../../img/bg-home4.jpg) no-repeat;
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url(../../img/bg-home4.jpg) no-repeat; 
@@ -49,11 +44,9 @@
 	padding-left: 5%;
 	@media only screen and (max-width : 992px) {
 		background-position: 30% top;
-		//padding-top: 15%;
 	}
 	 @media only screen and (max-width : 800px) {
 		background-position: 35% top;
-		//padding: 35% 5% 0 %5; 
 	}
 	@media only screen 
 	and (min-device-width : 768px) 
@@ -69,15 +62,12 @@
 	and (-webkit-min-device-pixel-ratio: 2) {
 		
 	}
-	@media only screen and (max-width : 480px) {
-		.space {
-			height: 240px;
-		}
+
 		//padding-top: calc(100% - 330px);
 		// background-color: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
 		// //background: -o-linear-gradient(left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../../img/bg-home4.jpg) no-repeat;
 		// //background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../../img/bg-home4.jpg) no-repeat;
-	}
+
 
 	.frame-home {
 		width: 100%;
@@ -85,16 +75,19 @@
 	}
 	.space {
 		height: 5%;
+		@media only screen and (max-width : 480px) {
+			height: 67%;
+		}
 	}
 	.hi {
-		font-family: $oswald;
+		font-family: $ubuntu;
 		font-weight: 700;
-		font-size: 40px;
+		font-size: 32px;
 		letter-spacing: 5px;
 		color: #33cdac;
 		text-align: right;
-		@media only screen and (max-width : 992px) {
-			//margin-top: 20%;
+		@media only screen and (max-width : 480px) {
+			font-size: 24px;
 		}
 	}
 }
@@ -241,9 +234,10 @@
 		font-size: 23px;
 		margin-top: 20px;
 		text-align: justify;
-		@media only screen and (min-device-width : 768px) {
-			text-align: center;
-			font-size: 18px;
+		@media only screen and (max-width: 768px) {
+			margin-left: 5%;
+    		margin-right: 5%;
+			font-size: 20px;
 		}
 	}
 	.strong {

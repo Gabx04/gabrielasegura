@@ -11,7 +11,7 @@
 }
 */
 h1 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Voltaire", sans-serif;
   font-size: 40px;
   color: #0d0d0d;
   text-align: right;
@@ -41,7 +41,7 @@ h1 {
       margin: 0 auto; } }
 
 h2 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Voltaire", sans-serif;
   font-size: 36px;
   color: #0d0d0d;
   text-align: center;
@@ -49,9 +49,8 @@ h2 {
   vertical-align: initial !important; }
   @media only screen and (max-width: 480px) {
     h2 {
-      font-size: 24px;
+      font-size: 32px;
       font-weight: 400;
-      color: #fff;
       text-align: center; } }
 
 .pr {
@@ -91,11 +90,6 @@ h2 {
     max-height: 100%; }
 
 .home-style {
-  /*background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../../img/bg-home.jpg);
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center center;
-  */
   background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url(../../img/bg-home4.jpg) no-repeat;
   background: -o-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url(../../img/bg-home4.jpg) no-repeat;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url(../../img/bg-home4.jpg) no-repeat;
@@ -114,21 +108,24 @@ h2 {
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     .home-style {
       background-position: 35% top; } }
-  @media only screen and (max-width: 480px) {
-    .home-style .space {
-      height: 240px; } }
   .home-style .frame-home {
     width: 100%;
     margin: 0% auto 0; }
   .home-style .space {
     height: 5%; }
+    @media only screen and (max-width: 480px) {
+      .home-style .space {
+        height: 67%; } }
   .home-style .hi {
-    font-family: "Oswald", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     letter-spacing: 5px;
     color: #33cdac;
     text-align: right; }
+    @media only screen and (max-width: 480px) {
+      .home-style .hi {
+        font-size: 24px; } }
 
 .frame-arrow {
   margin-top: 8%; }
@@ -234,10 +231,11 @@ h2 {
     font-size: 23px;
     margin-top: 20px;
     text-align: justify; }
-    @media only screen and (min-device-width: 768px) {
+    @media only screen and (max-width: 768px) {
       .about-style .aboutme {
-        text-align: center;
-        font-size: 18px; } }
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 20px; } }
   .about-style .strong {
     font-weight: bold;
     color: black; }
